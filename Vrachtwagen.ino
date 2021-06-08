@@ -2,7 +2,7 @@
 
 Servo servo;
 
-int motor_pin1 = 4;
+//int motor_pin1 = 4;
 int motor_pin2 = 5;
 int motor_pin3 = 6;
 int motor_pin4 = 11;
@@ -27,7 +27,7 @@ void setup() {
   pinMode(joyY,INPUT);
 
   servo.attach(servoPin);
-  digitalWrite(motor_pin1,HIGH);
+  //digitalWrite(motor_pin1,HIGH);
 }
 
 void loop() {
