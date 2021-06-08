@@ -33,10 +33,6 @@ void setup() {
 void loop() {
   xValue = analogRead(joyX);
   yValue = analogRead(joyY);
-
-  int Pain = map(xValue,0,1023,0,180);
-
-  servo.write(Pain);
   
   yValue >>= 1;
   if(yValue > 255){
@@ -61,6 +57,6 @@ void loop() {
   
   Serial.print(xValue);
   Serial.print("\t");
-  Serial.println(Pain);
+  Serial.println();
   
 }
